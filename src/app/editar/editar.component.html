@@ -1,0 +1,61 @@
+<div class="container">
+
+    <div class="row mt-5 mb-5">
+
+        <div class="col-md-4">
+
+            <div class="card border-0" style="width: 18rem;">
+
+                <div class="d-flex justify-content-center">
+                    <img class="card-img-top rounded-circle w-75" src="https://i.imgur.com/tBVgYUA.jpg"
+                        alt="Imagem de capa do card">
+                </div>
+
+                <div class="card-body">
+                    <h5 class="card-title text-center">Nome Teste</h5>
+
+                    <p class="card-text text-center">Mussum Ipsum, cacilds vidis litro abertis. Admodum accumsan
+                        disputationi eu
+                        sit. Vide electram sadipscing et per. Per aumento de cachacis, eu reclamis. Paisis, filhis,
+                        espiritis santis. Cevadis im ampola pa arma uma pindureta.</p>
+
+                    <a href="https://www.linkedin.com/in/magnoneves/"
+                        class="btn btn-outline-info d-flex justify-content-center mb-3" target="_blank">Linkedin</a>
+
+                    <a href="https://github.com/MagnoNeves2" class="btn btn-outline-dark d-flex justify-content-center"
+                        target="_blank">GitHub</a>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="col-md-8">
+
+            <div>
+                <h3 class="text-center mb-4 text-monospace">Edição de postagem</h3>
+
+                <div class="form-group">
+                    <label for="titulo" class="text-monospace">Título:</label>
+                    <input type="text" name="titulo" id="titulo" class="form-control" placeholder="Digite seu Título"
+                        [(ngModel)]="postagem.titulo">
+                </div>
+
+                <div class="form-group">
+                    <label for="texto" class="text-monospace">Texto:</label>
+                    <textarea name="texto" id="texto" cols="30" rows="4" class="form-control"
+                        placeholder="Digite o seu texto" [(ngModel)]="postagem.texto"></textarea>
+                </div>
+
+                <div class="d-flex justify-content-end">
+                    <button type="button" class="btn btn-outline-info w-25" (click)="salvar()">Salvar</button>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+</div>
